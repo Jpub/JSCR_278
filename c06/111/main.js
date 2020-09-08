@@ -1,10 +1,10 @@
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', (event) => {
   // 전체 화면 전환
-  myReqeustFullScreen(document.body);
+  myRequestFullScreen(document.body);
 });
 
-function myReqeustFullScreen(element) {
+function myRequestFullScreen(element) {
   if (element.requestFullscreen) {
     // 표준 사양
     element.requestFullscreen();
